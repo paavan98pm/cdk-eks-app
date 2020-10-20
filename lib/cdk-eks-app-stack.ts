@@ -9,5 +9,12 @@ export class CdkEksAppStack extends cdk.Stack {
     const cluster = new eks.Cluster(this, 'cdk-eks-cluster', {
       version: eks.KubernetesVersion.V1_18,
     });
+
+//    cluster.addFargateProfile('FargateProfile', {
+//      selectors: [
+//        { namespace: 'default'},
+//        { namespace: 'kube-system'}
+//      ]
+//  });    
   }
 }
