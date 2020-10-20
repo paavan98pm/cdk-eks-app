@@ -21,7 +21,11 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
+    "@aws-cdk/aws-eks": "^1.69.0",
     "@aws-cdk/core": "1.69.0",
+    "cdk8s": "^0.32.0",
+    "cdk8s-plus": "^0.32.0",
+    "constructs": "^3.0.25",
     "source-map-support": "^0.5.16"
   }
 }
