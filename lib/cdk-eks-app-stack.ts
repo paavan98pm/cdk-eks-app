@@ -12,6 +12,16 @@ export class CdkEksAppStack extends cdk.Stack {
       version: eks.KubernetesVersion.V1_18,
     });
 
+    //    cluster.addFargateProfile('FargateProfile', {
+    //      selectors: [
+    //        { namespace: 'default'},
+    //        { namespace: 'kube-system'}
+    //      ]
+    //  });    
+
     cluster.addCdk8sChart('my-chart', new MyChart(new cdk8s.App(), 'MyChart'));
+
+
+
   }
 }
